@@ -98,6 +98,47 @@ ul li a ion-icon {
   margin: 0 16px;
 }
 
+#lang-en .lang-icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+#lang-pt .lang-icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffffff;
+  margin-right: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.lang-link:hover {
+  color: #555;
+}
+
+.lang-link:hover .lang-icon img {
+  filter: brightness(80%);
+}
+
+
+
+
+
+
 
 
 
