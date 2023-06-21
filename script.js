@@ -3,7 +3,7 @@ const pegaLinks = document.querySelectorAll(".lang-link")
 var texts = {
   en: {
     linkedin: "Check out my LinkedIn",
-    resume: "Download my resume",
+    resume: "Check out my resume",
     github: "Check out my Github",
     contact: "Contact me",
     name: "Davi Soares",
