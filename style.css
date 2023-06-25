@@ -22,7 +22,7 @@ body * {
 
 #container {
   width: 360px;
-  margin-top: 56px;
+  margin-top: px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -160,12 +160,14 @@ ul li a:hover ion-icon {
 }
 
 .lang-link:hover {
-  color: #555;
+  color: #000000;
 }
 
 .lang-link:hover .lang-icon img {
   filter: brightness(80%);
 }
+
+
 
 #experience {
   margin-top: 40px;
@@ -178,12 +180,13 @@ ul li a:hover ion-icon {
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #000000;
+  color: #ffffffff;
   margin-bottom: 16px;
   font-family: "Arial", sans-serif; 
 }
 .title span {
-  color: black; /
+  font-family: 'Dosis', sans-serif;
+  color: #ffffffff; /
 }
 .skills {
   display: flex;
@@ -204,14 +207,13 @@ ul li a:hover ion-icon {
 }
 
 .strong {
-  background-color: gray;
+  background-color: dimgray;
 }
 
 .weak {
-  background-color: #ffcc80; /* nova cor para a barra de weak */
+  background-color: grey;
 }
 
-.text {
-  font-size: 16px;
-  color: #000000;
+.text{
+  color: #ffffffff;
 }

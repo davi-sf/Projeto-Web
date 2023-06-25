@@ -15,7 +15,7 @@ var texts = {
     resume: "Conheça meu currículo",
     github: "Conheça meu Github",
     contact: "Fale comigo",
-    name: "Olá, eu sou Davi! Estundante de Ciência da Computação na UFCG",
+    name: "Olá, eu sou Davi! Estudante de Ciência da Computação na UFCG",
     experience: "Experiência"
   },
 }
