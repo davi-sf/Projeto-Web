@@ -1,15 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
-
-  
 }
 
 h1 {
   font-size: 24px;
   color: #000000;
 }
-
 
 body {
   background-image: url(./assets/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg);
@@ -20,34 +17,51 @@ body {
 
 body * {
   font-family: 'Poppins', sans-serif;
-  color: #ffffffff
+  color: #ffffffff;
 }
 
 #container {
   width: 360px;
- 
   margin-top: 56px;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
-#profile{
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#profile {
   text-align: center;
   padding: 24px;
 }
+
 #profile img {
   display: block;
   width: 112px;
   margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #profile p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 8;
-  margin-bottom: auto;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: floralwhite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* links */
@@ -153,12 +167,51 @@ ul li a:hover ion-icon {
   filter: brightness(80%);
 }
 
+#experience {
+  margin-top: 40px;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: left;
+}
 
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 16px;
+  font-family: "Arial", sans-serif; 
+}
+.title span {
+  color: black; /
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
 
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
 
+.bar {
+  height: 8px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-right: 8px;
+}
 
+.strong {
+  background-color: gray;
+}
 
+.weak {
+  background-color: #ffcc80; /* nova cor para a barra de weak */
+}
 
-
-
-
+.text {
+  font-size: 16px;
+  color: #000000;
+}

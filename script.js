@@ -6,7 +6,8 @@ var texts = {
     resume: "Check out my resume",
     github: "Check out my Github",
     contact: "Contact me",
-    name: "Davi Soares",
+    name: "Hello, I am Davi! Computer Science student at FUCG ",
+    experience: "Experience"
   },
 
   "pt-br": {
@@ -14,6 +15,8 @@ var texts = {
     resume: "Conheça meu currículo",
     github: "Conheça meu Github",
     contact: "Fale comigo",
+    name: "Olá, eu sou Davi! Estundante de Ciência da Computação na UFCG",
+    experience: "Experiência"
   },
 }
 
@@ -23,11 +26,11 @@ pegaLinks.forEach(function (link) {
     var lang = link.getAttribute("language")
     mudaTexto(lang)
     if (lang === "en") {
-      var resumeLink = document.querySelector(
-        "a[href='https://drive.google.com/file/d/1jJ84TA6DQ6rJf89vfy7c_8NGvkgYYHVO/view?usp=sharing']"
-      )
-      resumeLink.href =
+      document.getElementById("resume-link").href =
         "https://drive.google.com/file/d/19BblG6ljfJuksvSAQsK8DyP-I8arj1BT/view?usp=sharing"
+    } else {
+      document.getElementById("resume-link").href =
+        "https://drive.google.com/file/d/1jJ84TA6DQ6rJf89vfy7c_8NGvkgYYHVO/view?usp=sharing"
     }
   })
 })
@@ -41,3 +44,8 @@ function mudaTexto(lang) {
 }
 
 mudaTexto("pt-br")
+
+window.addEventListener("load", function () {
+  var redesElement = document.getElementById("Redes")
+  redesElement.classList.add("show")
+})
