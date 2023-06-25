@@ -24,10 +24,10 @@ pegaLinks.forEach(function (link) {
     mudaTexto(lang)
     if (lang === "en") {
       var resumeLink = document.querySelector(
-        "a[href='https://drive.google.com/file/d/1Dx30i4pSqNmEpkCYjJ5hbx5fOjH_ix_D/view?usp=sharing']"
+        "a[href='https://drive.google.com/file/d/1jJ84TA6DQ6rJf89vfy7c_8NGvkgYYHVO/view?usp=sharing']"
       )
       resumeLink.href =
-        "https://drive.google.com/file/d/1F5zDq6nJoXHw3UirjeSMce9sAFnxEMo-/view?usp=sharing"
+        "https://drive.google.com/file/d/19BblG6ljfJuksvSAQsK8DyP-I8arj1BT/view?usp=sharing"
     }
   })
 })
